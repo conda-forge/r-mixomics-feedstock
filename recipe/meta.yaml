@@ -17,8 +17,8 @@ source:
 
 build:
   number: 0
-  # r-rgl is not available on win and osx b/c libglu dependency not available
-  skip: true  # [win or osx]
+  # r-rgl is not available on osx b/c libglu dependency not available
+  skip: true  # [osx]
 
   rpaths:
     - lib/R/lib/
@@ -99,3 +99,4 @@ extra:
     - bgruening
     - daler
     - jdblischak
+    - cbrueffer
