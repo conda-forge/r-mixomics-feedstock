@@ -14,14 +14,16 @@ Summary: Multivariate methods are well suited to large omics data sets where the
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/r-mixomics-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/r-mixomics-feedstock)
-OSX: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/r-mixomics-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/r-mixomics-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-mixomics-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-mixomics-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-mixomics-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-mixomics-feedstock/branch/master)
+![OSX disabled](https://img.shields.io/badge/OSX-disabled-lightgrey.svg)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-mixomics/badges/version.svg)](https://anaconda.org/conda-forge/r-mixomics)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-mixomics/badges/downloads.svg)](https://anaconda.org/conda-forge/r-mixomics)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-r--mixomics-green.svg)](https://anaconda.org/conda-forge/r-mixomics) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/r-mixomics.svg)](https://anaconda.org/conda-forge/r-mixomics) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/r-mixomics.svg)](https://anaconda.org/conda-forge/r-mixomics) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/r-mixomics.svg)](https://anaconda.org/conda-forge/r-mixomics) |
 
 Installing r-mixomics
 =====================
