@@ -16,8 +16,7 @@ source:
 build:
   merge_build_host: True  # [win]
   number: 1
-  # r-rgl is not available on osx b/c libglu dependency not available
-  skip: true  # [win32 or osx]
+  skip: true  # [win32]
   rpaths:
     - lib/R/lib/
     - lib/
