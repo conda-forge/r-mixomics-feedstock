@@ -7,7 +7,6 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: mixOmics_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/mixOmics_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/mixOmics/mixOmics_{{ version }}.tar.gz
@@ -15,9 +14,8 @@ source:
 
 build:
   merge_build_host: True  # [win]
-  number: 1
-  # r-rgl is not available on osx b/c libglu dependency not available
-  skip: true  # [win32 or osx]
+  number: 2
+  noarch: generic
   rpaths:
     - lib/R/lib/
     - lib/
@@ -87,16 +85,30 @@ about:
     N-integration with variants of Generalised Canonical Correlation Analysis and P-integration
     with variants of multi-group Partial Least Squares.'
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-3'  # [win]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
 
 extra:
   recipe-maintainers:
+    - conda-forge/r
     - MathiasHaudgaard
     - FrodePedersen
     - ArneKr
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
+
+# Package: mixOmics
+# Type: Package
+# Title: Omics Data Integration Project
+# Version: 6.3.2
+# Date: 2018-06-01
+# Depends: R (>= 2.10), MASS, lattice, ggplot2
+# Imports: igraph, rgl, ellipse, corpcor, RColorBrewer, parallel, dplyr, tidyr, reshape2, methods, matrixStats, rARPACK, gridExtra
+# Author: Kim-Anh Le Cao, Florian Rohart, Ignacio Gonzalez, Sebastien Dejean with key contributors Benoit Gautier, Francois Bartolo and contributions from Pierre Monget, Jeff Coquery, FangZou Yao, Benoit Liquet.
+# Maintainer: Kim-Anh Le Cao <kimanh.lecao@unimelb.edu.au>
+# Description: Multivariate methods are well suited to large omics data sets where the number of variables (e.g. genes, proteins, metabolites) is much larger than the number of samples (patients, cells, mice). They have the appealing properties of reducing the dimension of the data by using instrumental variables (components), which are defined as combinations of all variables. Those components are then used to produce useful graphical outputs that enable better understanding of the relationships and correlation structures between the different data sets that are integrated. mixOmics offers a wide range of multivariate methods for the exploration and integration of biological datasets with a particular focus on variable selection. The package proposes several sparse multivariate models we have developed to identify the key variables that are highly correlated, and/or explain the biological outcome of interest. The data that can be analysed with mixOmics may come from high throughput sequencing technologies, such as omics data (transcriptomics, metabolomics, proteomics, metagenomics etc) but also beyond the realm of omics (e.g. spectral imaging). The methods implemented in mixOmics can also handle missing values without having to delete entire rows with missing data. A non exhaustive list of methods include variants of generalised Canonical Correlation Analysis, sparse Partial Least Squares and sparse Discriminant Analysis. Recently we implemented integrative methods to combine multiple data sets: N-integration with variants of Generalised Canonical Correlation Analysis and P-integration with variants of multi-group Partial Least Squares.
+# License: GPL (>= 2)
+# URL: http://www.mixOmics.org
+# BugReports: https://bitbucket.org/klecao/package-mixomics/issues
+# Repository: CRAN
+# Date/Publication: 2018-06-01 14:55:43 UTC
+# Packaged: 2018-06-01 13:47:56 UTC; kim-anh
+# NeedsCompilation: no
+# LazyData: true
