@@ -15,7 +15,7 @@ source:
 
 build:
   merge_build_host: True  # [win]
-  number: 1
+  number: 2
   # r-rgl is not available on osx b/c libglu dependency not available
   skip: true  # [win32 or osx]
   rpaths:
@@ -92,6 +92,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - conda-forge/r
     - MathiasHaudgaard
     - FrodePedersen
     - ArneKr
