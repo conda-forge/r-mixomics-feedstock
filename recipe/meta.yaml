@@ -7,7 +7,6 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: mixOmics_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/mixOmics_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/mixOmics/mixOmics_{{ version }}.tar.gz
@@ -15,9 +14,9 @@ source:
 
 build:
   merge_build_host: True  # [win]
-  number: 3
+  number: 4
   # r-rgl is not available on osx b/c libglu dependency not available
-  skip: true  # [win32 or osx]
+  skip: true  # [osx]
   rpaths:
     - lib/R/lib/
     - lib/
@@ -65,7 +64,7 @@ test:
 
 about:
   home: http://www.mixOmics.org
-  license: GPL (>= 2)
+  license: GPL-2.0-or-later
   summary: 'Multivariate methods are well suited to large omics data sets where the number of
     variables (e.g. genes, proteins, metabolites) is much larger than the number of
     samples (patients, cells, mice). They have the appealing properties of reducing
@@ -87,7 +86,8 @@ about:
     N-integration with variants of Generalised Canonical Correlation Analysis and P-integration
     with variants of multi-group Partial Least Squares.'
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
@@ -95,8 +95,3 @@ extra:
     - MathiasHaudgaard
     - FrodePedersen
     - ArneKr
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
