@@ -14,7 +14,7 @@ source:
 
 build:
   merge_build_host: True  # [win]
-  number: 5
+  number: 6
   # r-rgl is not available on osx b/c libglu dependency not available
   skip: true  # [osx]
   rpaths:
