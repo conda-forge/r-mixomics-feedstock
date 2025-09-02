@@ -3,19 +3,6 @@ About r-mixomics-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-mixomics-feedstock/blob/main/LICENSE.txt)
 
-
-About r-mixomics
-----------------
-
-Home: http://www.mixOmics.org
-
-Package license: GPL-2.0-or-later
-
-Summary: Multivariate methods are well suited to large omics data sets where the number of variables (e.g. genes, proteins, metabolites) is much larger than the number of samples (patients, cells, mice). They have the appealing properties of reducing the dimension of the data by using instrumental variables (components), which are defined as combinations of all variables. Those components are then used to produce useful graphical outputs that enable better understanding of the relationships and correlation structures between the different data sets that are integrated. mixOmics offers a wide range of multivariate methods for the exploration and integration of biological datasets with a particular focus on variable selection. The package proposes several sparse multivariate models we have developed to identify the key variables that are highly correlated, and/or explain the biological outcome of interest. The data that can be analysed with mixOmics may come from high throughput sequencing technologies, such as omics data (transcriptomics, metabolomics, proteomics, metagenomics etc) but also beyond the realm of omics (e.g. spectral imaging). The methods implemented in mixOmics can also handle missing values without having to delete entire rows with missing data. A non exhaustive list of methods include variants of generalised Canonical Correlation Analysis, sparse Partial Least Squares and sparse Discriminant Analysis. Recently we implemented integrative methods to combine multiple data sets: N-integration with variants of Generalised Canonical Correlation Analysis and P-integration with variants of multi-group Partial Least Squares.
-
-About r-mixomics
-----------------
-
 Home: http://www.mixOmics.org
 
 Package license: GPL-2.0-or-later
@@ -26,51 +13,11 @@ Current build status
 ====================
 
 
-<table>
-    
-  <tr>
-    <td>Azure</td>
+<table><tr><td>All platforms:</td>
     <td>
-      <details>
-        <summary>
-          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4244&branchName=main">
-            <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-mixomics-feedstock?branchName=main">
-          </a>
-        </summary>
-        <table>
-          <thead><tr><th>Variant</th><th>Status</th></tr></thead>
-          <tbody><tr>
-              <td>linux_64_r_base4.3</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4244&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-mixomics-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_r_base4.3" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_r_base4.4</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4244&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-mixomics-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_r_base4.4" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_r_base4.3</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4244&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-mixomics-feedstock?branchName=main&jobName=win&configuration=win%20win_64_r_base4.3" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_r_base4.4</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4244&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-mixomics-feedstock?branchName=main&jobName=win&configuration=win%20win_64_r_base4.4" alt="variant">
-                </a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </details>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4244&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-mixomics-feedstock?branchName=main">
+      </a>
     </td>
   </tr>
 </table>
@@ -196,8 +143,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@ArneKr](https://github.com/ArneKr/)
-* [@FrodePedersen](https://github.com/FrodePedersen/)
 * [@MathiasHaudgaard](https://github.com/MathiasHaudgaard/)
 * [@conda-forge/r](https://github.com/orgs/conda-forge/teams/r/)
 
