@@ -12,12 +12,15 @@ source:
   sha256: 62c9bfe8967997c673e45433a8705dd43f6b5eb3c9fd62529461d3e6f4cb10d3
 
 build:
-  number: 7
-  # r-rgl is not available on osx b/c libglu dependency not available
-  skip: true  # [osx]
+  number: 8
+  noarch: generic
   rpaths:
     - lib/R/lib/
     - lib/
+  missing_dso_whitelist:
+    - '*/R.dll'        # [win]
+    - '*/Rblas.dll'    # [win]
+    - '*/Rlapack.dll'  # [win]
 
 requirements:
   build:
@@ -91,5 +94,3 @@ extra:
   recipe-maintainers:
     - conda-forge/r
     - MathiasHaudgaard
-    - FrodePedersen
-    - ArneKr
